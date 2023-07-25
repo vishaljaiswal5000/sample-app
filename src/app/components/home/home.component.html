@@ -1,0 +1,19 @@
+<div class="wrapper">
+
+
+  <h1>Our Team</h1>
+<hr />
+
+<button mat-raised-button routerLink="/create-employee">Create Employee</button>
+
+<mat-grid-list cols="4" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let employee of employees">
+    <sa-card [employee]="employee" (info)="receivedInfo($event)"></sa-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<hr />
+
+{{ selectedEmployee | json }}
+
+</div>

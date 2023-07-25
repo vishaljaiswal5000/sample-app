@@ -1,0 +1,18 @@
+<form [formGroup]="employeeForm">
+  <mat-form-field appearance="outline">
+    <mat-label>Id</mat-label>
+    <input matInput type="number" placeholder="Placeholder" formControlName="id" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Placeholder" formControlName="name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Title</mat-label>
+    <input matInput placeholder="Placeholder" formControlName="title" />
+  </mat-form-field>
+
+  <button mat-raised-button (click)="save()">Add Employee</button>
+</form>
